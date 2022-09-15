@@ -1,0 +1,19 @@
+<%= link_to "Home",
+    books_path
+%>
+
+<h1>Removal Recipt</h1>
+<table>
+    <tr>
+        <th>Title: </th><td><%= @book.title %></td>
+    </tr>
+    <tr>
+        <th>Author: </th><td><%= @book.author %></td>
+    </tr>
+    <tr>
+        <th>Price: </th><td><%= number_to_currency(@book.price) %></td>
+    </tr>
+    <tr>
+        <th>Publish-Date: </th><td><%= @book.published_date %></td>
+    </tr>
+</table>

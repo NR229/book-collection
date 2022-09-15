@@ -1,0 +1,39 @@
+<%= link_to "Home",
+    books_path
+%>
+<% flash.each do |type, msg| %>
+    <div class='flash'>
+        <p>
+            <%= msg %>
+        </p>
+    </div>
+<%end%>
+<h1>New Book</h1>
+<table>
+    <%= form_for(@book) do |f| %>
+        <tr>
+            <th>Title</th>
+            <td><%= f.text_field(:title) %></td>
+        </tr>
+        
+        <tr>
+            <th>Author</th>
+            <td><%= f.text_field(:author) %></td>
+        </tr>
+        <tr>
+            <th>Price</th>
+            <td><%= f.number_field(:price, step: 0.01) %></td>
+        </tr>
+        <tr>
+            <th>Published</th>
+            <td><%= f.date_field(:published_date) %></td>
+        </tr>
+        <tr>
+            <td>
+                <div class='form-buttons'>
+                    <%= f.submit('Create Book')%>
+                </div>
+            </td>
+        </tr>
+    <%end%>
+</table>

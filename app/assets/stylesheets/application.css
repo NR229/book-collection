@@ -13,3 +13,15 @@
  *= require_tree .
  *= require_self
  */
+td {
+    padding-left: 10px;
+}
+
+.flash{
+    margin-top: 20px;
+    outline: solid 2px;
+    outline-color: black;
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 6px;
+}
