@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= User.find_by(id: @user_book.user_id).username %>
+</p>
+
+<p>
+  <strong>Book:</strong>
+  <%= Book.find_by(id: @user_book.book_id).title %>
+</p>
+
+<%= link_to 'Edit', edit_user_book_path(@user_book) %> |
+<%= link_to 'Back', user_books_path %>

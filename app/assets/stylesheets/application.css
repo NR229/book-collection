@@ -25,3 +25,9 @@ td {
     padding: 5px 10px;
     border-radius: 6px;
 }
+
+table{
+    outline: solid 2px;
+    border-radius: 6px;
+    outline-color: black;
+}

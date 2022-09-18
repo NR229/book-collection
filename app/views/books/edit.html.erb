@@ -27,8 +27,12 @@
             <th>Published</th>
             <td><%= f.date_field(:published_date) %></td>
         </tr>
-        <div class='form-buttons'>
-            <%= f.submit('Update Book')%>
-        </div>
+        <tr>
+            <td>
+                <div class='form-buttons'>
+                    <%= f.submit('Update Book')%>
+                </div>
+            </td>
+        </tr>
     <%end%>
 </table>
